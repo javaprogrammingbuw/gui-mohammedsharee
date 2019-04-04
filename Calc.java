@@ -4,6 +4,8 @@ import java.awt.event.*;
 
 public class Calc implements ActionListener{
 
+  //Intendation!
+
  private JFrame f;
 
  private JTextField t;
@@ -335,7 +337,7 @@ t.setText(t.getText()+s.charAt(i));
 }
 
 public static void main(String[] args){
-
+  //Look back at the example file on how to display your window
 new Calc();
 
      }
