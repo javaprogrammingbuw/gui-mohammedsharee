@@ -1,10 +1,14 @@
 import javax.swing.*;
 
+import java.awt.EventQueue;
+
 import java.awt.event.*;
 
-public class Calc implements ActionListener{
+import java.awt.event.MouseEvent;
 
-  //Intendation!
+import java.awt.event.MouseMotionAdapter;
+
+public class Calc implements ActionListener{
 
  private JFrame f;
 
@@ -335,10 +339,21 @@ t.setText(t.getText()+s.charAt(i));
 }
 
 }
+private void setVisible(boolean c) {
+	
+}
+   
 
 public static void main(String[] args){
-  //Look back at the example file on how to display your window
-new Calc();
+
+
+    EventQueue.invokeLater(() ->{
+        Calc ex = new Calc();
+        ex.setVisible(true);
+    });
+	
+//new Calc();
 
      }
-   }
+
+}
